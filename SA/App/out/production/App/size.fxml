@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SizeController">
+   <children>
+      <Pane fx:id="scenePane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: pink;">
+         <children>
+            <Label layoutX="245.0" layoutY="26.0" text="บ่อกุ้ง">
+               <font>
+                  <Font size="40.0" />
+               </font></Label>
+            <Label layoutX="271.0" layoutY="84.0" text="ไซส์">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <TextField fx:id="Weightfield" layoutX="311.0" layoutY="284.0" />
+            <Label layoutX="206.0" layoutY="226.0" text="ขนาด">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label layoutX="203.0" layoutY="288.0" text="จำนวน">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Button fx:id="confrem" layoutX="479.0" layoutY="339.0" mnemonicParsing="false" onAction="#endBtnAction" text="ยืนยันการสั่งซื้อ" />
+            <Label layoutX="212.0" layoutY="167.0" text="เพศ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="Sexbox" layoutX="327.0" layoutY="165.0" onAction="#chooseSex" prefWidth="150.0" />
+            <ComboBox fx:id="Sizebox" layoutX="329.0" layoutY="224.0" prefWidth="150.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
